@@ -1,2 +1,2 @@
 # semmd
-Semantic Materials with a Twist
+Semantic Materials
