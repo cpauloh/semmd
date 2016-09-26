@@ -13,6 +13,7 @@
 
 <https://w3id.org/semmd/skos>
   rdf:type owl:Ontology ;
+  rdfs:label "An Open Glossary for Materials, Manufacturing and Design"
   dc:contributor "Jeff Guthrie, Alion S&T"^^xsd:string ;
   dc:contributor "Kathy Pavelock, Alion S&T"^^xsd:string ;
   dc:contributor "Richard Lane, Alion S&T"^^xsd:string ;
@@ -21,6 +22,7 @@
   dc:description "In this first iteration, the skosConceptSchemes describe the source of the terms and definitions contained within that scheme.  The skos:prefLabel for each skos:ConceptScheme endevours to express the content of the source"@en-US ;
   dc:description "The relationships for all skosConceptSchemes use dc, skos, and rdf properties."@en-US ;
   dc:description "The relationships for all skosConcepts are expressed using only skos or rdf properties."@en-US ;
+  dc:rights "Version 0001 of this glossary contains definitions having unlimited distribution rights."@en-US ;
   dc:source <https://w3id.org/semmd/skos/> ;
   rdfs:comment "All terms and definitions included in version 0001 were first converted or transcribed from their respective source documents into Microsoft Excel where they were edited prior to being transformed to RDF."@en-US ;
   rdfs:comment "The terms and definitions associated with skosConceptSchemes cs004 through cs042 were provided by Alion S&T and are generally associated with functional materials."@en-US ;
