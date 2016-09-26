@@ -13,7 +13,7 @@
 
 <https://w3id.org/semmd/skos>
   rdf:type owl:Ontology ;
-  rdfs:label "An Open Glossary for Materials, Manufacturing and Design"
+  rdfs:label "An Open Glossary for Materials, Manufacturing and Design" ;
   dc:contributor "Jeff Guthrie, Alion S&T"^^xsd:string ;
   dc:contributor "Kathy Pavelock, Alion S&T"^^xsd:string ;
   dc:contributor "Richard Lane, Alion S&T"^^xsd:string ;
