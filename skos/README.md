@@ -1,12 +1,14 @@
 # Open Terms and Definitions for Materials, Manufacturing, and Design
 ## The Basics
 The vocabulary includes the definiton of a handful of classes:
-* skos:Concept
-  * tnd:TermAndDefinition
-    * tnd:NdiTestMethod
-    * tnd:UnitOfMeasure
+* tnd:TermAndDefinition
+  * tnd:NdiTestMethod
+  * tnd:UnitOfMeasure
 * tnd:DefinitonSource
 * tnd:RightsStatement
+
+![alt text][class_structure]
+[class_structure]: https://github.com/cpauloh/semmd/blob/master/skos/ClassStructure.PNG "Class Structure"
 
 and one definition of an object property:
 * tnd:originalSource
