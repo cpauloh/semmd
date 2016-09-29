@@ -27,4 +27,4 @@ If you would like to place your contributed terms and definitons in a specific s
 Once you've created the file (preferably .ttl), please upload it to this directory.
 
 ## Future Work
-The ontology schema will be seperated from the vocabulary.
+The ontology schema and vocabulary (individuals) will be placed into seperate files.
