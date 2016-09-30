@@ -8,8 +8,6 @@ Terms, definitions, and rights statements were transcribed from a number of docu
 
 Generally there hasn't been any attempt to harmonize or relate the terms and definitions at this time.
 
-In one case regarding Nondestructive Inspection, the glossary contained a term, an association to a test method, and a definition.  This was captured in the model by using skos:related to link the term and NDI test method.
-
 However, in one case regarding a source for Nondestructive Inspection information, the glossary contained a term, an association to a test method, and a definition.  This was captured in the model by using skos:related to link the term and NDI test method.
 
 ## Model Basics
