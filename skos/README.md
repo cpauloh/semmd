@@ -1,6 +1,6 @@
 # Open Terms and Definitions for Materials, Manufacturing, and Design
 ## Background
-During the creation of ontologies (or even XML schemas), it's very helpful to have human-readable definitions that can be associated with classes, properties and individuals.
+During the creation of ontologies (or XML schemas), it's helpful to have human-readable definitions that can be associated with classes, properties and individuals.
 
 Unfortunately, access to definitions of technical terms without legal encumbrance is quite limited.  This repository is a step in the direction of gathering definitions with unlimited or attribution only distribution rights and making them freely available to others.
 
