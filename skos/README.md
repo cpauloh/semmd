@@ -53,11 +53,15 @@ Example:
 * tnd:abe000005 - individual in class tnd:RightsStatement
 
 Since a symbolic naming convention was adopted, it's necessary to use skos:prefLabel to give the individual a human-readable name.  For the term, the skos:prefLabel used for tnd:TermAndDefinition should be all lower-case with spaces unless a proper noun is part of the label.
+
 Examples:
-* Young's modulus
-* tensile modulus of elasticity
+* "Young's modulus"
+* "tensile modulus of elasticity"
 
 The skos:prefLabel used for tnd:DefinitionSource should use title case.
+
+Example:
+* "Technical Manual for Nondestructive Inspection Methods, Basic Theory"
 
 If you would like to place your contributed terms and definitions in a specific subclass within tnd:TermAndDefinition, please feel free to do so.  Note, however, the class structure may change in the future.
 
