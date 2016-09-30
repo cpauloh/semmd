@@ -8,7 +8,7 @@ Terms, definitions, and rights statements were transcribed from a number of docu
 
 Generally there hasn't been any attempt to harmonize or relate the terms and definitions at this time.
 
-In once case regarding Nondestructive Inspection, the glossary contained a term, an association to a test method, and a definition.  This was captured in the model by using skos:related to link the term and NDI test method.
+In one case regarding Nondestructive Inspection, the glossary contained a term, an association to a test method, and a definition.  This was captured in the model by using skos:related to link the term and NDI test method.
 
 ## Model Basics
 The vocabulary includes the definition of a handful of classes:
@@ -29,15 +29,33 @@ A vast majority of the Terms and Definitions (T&D) are of type tnd:TermAndDefini
 The T&D individuals within the class tnd:UnitOfMeasure will likely be deleted in the future.
 
 ## Contributing
-If you would like to contribute **open** terms and definitions, you can use the sample vocabulary file entitled "tnd_template_0002.ttl" as a starting point. It contains sample individuals for each of the three classes:  tnd:TermAndDefinition, tnd:DefinitionSource, and tnd:RightsStatement.
+If you would like to contribute **open** terms and definitions related to materials, manufacturing and design, there are three basic approaches and each approach consists of three elements for a definition:
+* a term and textual definition
+* a source for the definitions (document, web, personal)
+* a rights statement for the definition (e.g. unlimited distribution)
 
-If the terms and definitions require attribution (e.g. Creative Commons 4.0), please create individuals of type tnd:RightsStatement as needed.
+### First Approach
+Simply send a spreadsheet or tab/comma delimited file to semanticmatls@gmail.com
+### Second Approach
+Send a vocabulary file (RDF) that adheres to the schema to semanticmatls@gmail.com.  Turtle is preferred, but other serializations are fine.
+### Third Approach
+Fork this repository, add and commit your vocabulary file, submit a pull request.
 
-If you would like to place your contributed terms and definitions in a specific subclass of tnd:TermAndDefinition, please feel free to do so.  Note, however, the class structure may change in the future.
+For the last two approaches, the sample vocabulary file entitled "tnd_template_0002.ttl" can be used as a starting point. It contains sample individuals for each of the three classes:  tnd:TermAndDefinition, tnd:DefinitionSource, and tnd:RightsStatement.
 
-Ideally, forking this repository, making changes, and then submitting a pull request is the preferred method for contributing.  While not required, using a turtle serialization (.ttl) is preferred.
+A symbolic naming convention has been adopted for the individuals (class instances) in each of the three classes.
 
-A second method is to email your vocabulary file or even a spreadsheet containing the terms, definitions, source, and distribution rights to semanticmatls@gmail.com, and it will be added to the repository.
+* prefix:aaa000000 - one to three alpha characters followed by six numeric characters.  The set of individuals in each class should be assigned a unique alpha character prefix.
+
+Example:
+* tnd:ab000356 - individual in class tnd:TermAndDefinition
+* tnd:cd000022 - individual in class tnd:DefinitionSource
+* tnd:abe000005 - individual in class tnd:RightsStatement
+
+If you would like to place your contributed terms and definitions in a specific subclass within tnd:TermAndDefinition, please feel free to do so.  Note, however, the class structure may change in the future.
+
+### Alpha Prefixes Already in use
+* c, ds, drs
 
 ## Future Work
-The ontology schema and vocabulary (individuals) will be placed into seperate files.
+The ontology schema and vocabulary (individuals) will be placed into separate files.
