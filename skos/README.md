@@ -11,7 +11,7 @@ Terms, definitions, and rights statements were transcribed from a number of docu
 
 Generally there hasn't been any attempt to harmonize or relate the terms and definitions at this time.
 
-However, in one case regarding a source for Nondestructive Inspection information, the glossary contained a term, an association to a test method, and a definition.  This was captured in the model by using skos:related to link the term and NDI test method.
+However, in one case regarding a source for Nondestructive Inspection information, the glossary contained a term, an association to a test method.  This was captured in the model through the use of skos:related to link the term and NDI test method.
 
 ## Model Basics
 The vocabulary includes the definition of a handful of classes:
@@ -46,7 +46,7 @@ Fork this repository, add and commit your vocabulary file, submit a pull request
 
 For the last two approaches, the sample vocabulary file entitled "tnd_template_0002.ttl" can be used as a starting point. It contains sample individuals for each of the three classes:  tnd:TermAndDefinition, tnd:DefinitionSource, and tnd:RightsStatement.
 
-For the definition's term, the skos:prefLabel should be all lower-case with words seperated using spaces.  Proper nouns should be capitalized.
+For the definition's term, the range of skos:prefLabel should be all lower-case with words seperated using spaces.  Proper nouns should be capitalized.
 
 Examples:
 * skos:prefLabel "Young's modulus"
