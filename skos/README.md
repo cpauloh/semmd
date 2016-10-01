@@ -1,6 +1,9 @@
 # Open Terms and Definitions for Materials, Manufacturing, and Design
 ## Background
-During the creation of ontologies (or XML schemas), it's helpful to have human-readable definitions that can be associated with classes, properties and individuals.
+During the creation of ontologies (or XML schemas), it's helpful to have human-understandable definitions that can be associated with classes, properties and individuals.
+* When working with domain experts, it reduces the time to identify important concepts and their meaning
+* If the definitions are published and then referred to by others within their ontologies or XML schemas, it creates another path for identifying points for alignment and/or merging.  
+ * Example:  http:example.org/mmd-example/AgeHardening rdfs:seeAlso tnd:000022
 
 Unfortunately, access to definitions of technical terms without legal encumbrance is quite limited.  This repository is a step in the direction of gathering definitions with unlimited or attribution only distribution rights and making them freely available to others.
 
@@ -37,36 +40,27 @@ If you would like to contribute **open** terms and definitions related to materi
 ### First Approach
 Simply send a spreadsheet or tab/comma delimited file to semanticmatls@gmail.com
 ### Second Approach
-Send a vocabulary file (RDF) that adheres to the schema to semanticmatls@gmail.com.  Turtle is preferred, but other serializations are fine.
+Send a vocabulary file (RDF) adhering to the schema to semanticmatls@gmail.com.  Turtle is preferred, but other serializations are fine.
 ### Third Approach
 Fork this repository, add and commit your vocabulary file, submit a pull request.
 
 For the last two approaches, the sample vocabulary file entitled "tnd_template_0002.ttl" can be used as a starting point. It contains sample individuals for each of the three classes:  tnd:TermAndDefinition, tnd:DefinitionSource, and tnd:RightsStatement.
 
-A symbolic naming convention has been adopted for the individuals (class instances) in each of the three classes.
-
-* prefix:aaa000000 - one to three alpha characters followed by six numeric characters.  The set of individuals in each class should be assigned a unique alpha character prefix.
-
-Example:
-* tnd:ab000356 - individual in class tnd:TermAndDefinition
-* tnd:cd000022 - individual in class tnd:DefinitionSource
-* tnd:abe000005 - individual in class tnd:RightsStatement
-
-Since a symbolic naming convention was adopted, it's necessary to use skos:prefLabel to give the individual a human-readable name.  For the term, the skos:prefLabel used for tnd:TermAndDefinition should be all lower-case with spaces unless a proper noun is part of the label.
+For the definition's term, the skos:prefLabel should be all lower-case with words seperated using spaces.  Proper nouns should be capitalized.
 
 Examples:
-* "Young's modulus"
-* "tensile modulus of elasticity"
+* skos:prefLabel "Young's modulus"
+* skos:prefLabel "tensile modulus of elasticity"
 
 The skos:prefLabel used for tnd:DefinitionSource should use title case.
 
 Example:
-* "Technical Manual for Nondestructive Inspection Methods, Basic Theory"
+* skos:prefLabel "Technical Manual for Nondestructive Inspection Methods, Basic Theory"
+
+The qname for each contributed term, source, and rights statement will be changed to adhere to the existing naming convention (e.g. tnd:c004678, tnd:ds053, and tnd:drs0022).  However, the original qname and its provenance will be maintained.
 
 If you would like to place your contributed terms and definitions in a specific subclass within tnd:TermAndDefinition, please feel free to do so.  Note, however, the class structure may change in the future.
 
-### Alpha Prefixes Already in use
-* c, ds, drs
 
 ## Future Work
-The ontology schema and vocabulary (individuals) will be placed into separate files.
+* The ontology schema and vocabulary (individuals) will be placed into separate files.
