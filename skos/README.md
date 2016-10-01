@@ -46,7 +46,7 @@ Fork this repository, add and commit your vocabulary file, submit a pull request
 
 For the last two approaches, the sample vocabulary file entitled "tnd_template_0002.ttl" can be used as a starting point. It contains sample individuals for each of the three classes:  tnd:TermAndDefinition, tnd:DefinitionSource, and tnd:RightsStatement.
 
-For the definition's term, the range of skos:prefLabel should be all lower-case with words seperated using spaces.  Proper nouns should be capitalized.
+For the definition's term, the range of skos:prefLabel should be singular, lower-case, and word seperation should use spaces.  Proper nouns should be capitalized.
 
 Examples:
 * skos:prefLabel "Young's modulus"
