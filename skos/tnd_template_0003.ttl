@@ -1,0 +1,54 @@
+# baseURI: https://w3id.org/semmd/skos_candidate
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix tnd: <https://w3id.org/semmd/skos#> .
+
+#=============================================================
+# Source of Term and Definition
+#
+tnd:ds007  a            tnd:DefinitionSource ;
+        dc:identifier   "JP 3-15"^^xsd:string ;
+        dc:publisher    "United States Joint Chiefs of Staff"@en-US ;
+        dc:source       <http://www.dtic.mil/doctrine/new_pubs/jp3_15.pdf> ;
+        dc:title        "Barriers, Obstacles, and Mine Warfare for Joint Operations"@en-US ;
+        dct:date        "2011-06-01"^^xsd:date ;
+        dct:rights      tnd:drs0002 ;
+        skos:prefLabel  "Barriers, Obstacles, and Mine Warfare for Joint Operations"@en-US .
+
+#=============================================================
+# Rights Statement for the Definition
+#
+tnd:drs0002  a          tnd:RightsStatement ;
+        rdfs:comment    "Statement from the website:  [This Information] is considered public information and may be distributed or copied. Use of appropriate byline/photo/image credits is requested."@en-US , "The publication itself does not have a rights statement."@en-US ;
+        rdfs:label      "United States Department of Defense joint publication public information"@en-US ;
+        skos:prefLabel  "United States Department of Defense joint publication public information"@en-US .
+
+#=============================================================
+# Term and Definition
+#
+tnd:c002331  a              tnd:TermAndDefinition ;
+        skos:altLabel       "Degaussing"@en-US ;
+        skos:definition     "The process whereby a ship's magnetic field is reduced by the use of electromagnetic coils, permanent magnets, or other means."@en-US ;
+        skos:inScheme       tnd:OpenMmdGlossary ;
+        skos:prefLabel      "degaussing"@en-US ;
+        tnd:originalSource  tnd:ds007 .
+
+tnd:c003347  a              tnd:TermAndDefinition ;
+        skos:altLabel       "Pressure Mine"@en-US ;
+        skos:definition     "In land mine warfare, a mine whose fuse responds to the direct pressure of a target. 2. In naval mine warfare, a mine whose circuit responds to the hydrodynamic pressure field of a target."@en-US ;
+        skos:inScheme       tnd:OpenMmdGlossary ;
+        skos:prefLabel      "pressure mine"@en-US ;
+        tnd:originalSource  tnd:ds007 .
+
+tnd:c003222  a              tnd:TermAndDefinition ;
+        skos:altLabel       "Ordnance"@en-US ;
+        skos:definition     "Explosives, chemicals, pyrotechnics, and similar stores, e.g., bombs, guns and ammunition, flares, smoke, or napalm."@en-US ;
+        skos:inScheme       tnd:OpenMmdGlossary ;
+        skos:prefLabel      "ordnance"@en-US ;
+        tnd:originalSource  tnd:ds007 .
