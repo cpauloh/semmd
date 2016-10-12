@@ -11,7 +11,7 @@ Terms, definitions, and rights statements were transcribed from a number of docu
 
 Generally there hasn't been any attempt to harmonize or relate the terms and definitions at this time.
 
-However, in one case regarding a source for Nondestructive Inspection information, the glossary contained a term, an association to a test method.  This was captured in the model through the use of skos:related to link the term and NDI test method.
+However, in one case regarding a source for Nondestructive Inspection (NDI) information, the glossary contained a term along with an association to a NDI test method.  This was captured in the model through the use of skos:related to link the term and NDI test method.
 
 ## Model Basics
 The vocabulary includes the definition of a handful of classes:
@@ -38,7 +38,7 @@ If you would like to contribute **open** terms and definitions related to materi
 * a rights statement for the definition (e.g. unlimited distribution)
 
 ### First Approach
-Simply send a spreadsheet or tab/comma delimited file to semanticmatls@gmail.com
+Simply send a spreadsheet, tab delimited, or XML file to semanticmatls@gmail.com.
 ### Second Approach
 Send a vocabulary file (RDF) adhering to the schema to semanticmatls@gmail.com.  Turtle is preferred, but other serializations are fine.
 ### Third Approach
