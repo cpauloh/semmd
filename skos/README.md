@@ -5,13 +5,16 @@ During the creation of ontologies (or XML schemas), it's helpful to have human-u
 * If the definitions are published and then referred to by others within their ontologies or XML schemas, it creates another path for identifying points for alignment and/or merging.  
  * Example:  http:example.org/mmd-example/AgeHardening rdfs:seeAlso tnd:000022
 
-Unfortunately, access to definitions of technical terms without legal encumbrance is quite limited.  This repository is a step in the direction of gathering definitions with unlimited or attribution only distribution rights and making them freely available to others.
+Unfortunately, access to definitions of technical terms without legal encumbrance is quite limited.  This repository is a step in the direction of gathering definitions with unlimited or attribution-only licensing and making them freely available to others.
 
 Terms, definitions, and rights statements were transcribed from a number of documents or websites.
 
 Generally there hasn't been any attempt to harmonize or relate the terms and definitions at this time.
 
 However, in one case regarding a source for Nondestructive Inspection (NDI) information, the glossary contained a term along with an association to a NDI test method.  This was captured in the model through the use of skos:related to link the term and NDI test method.
+
+## Acknowledgements
+[ASM International](http://www.asminternational.org/) contributed 960 high-quality definitions from their publication entitled "ASM Handbook, Volume 21: Composites."  The definitions are licensed under Creative Commons the [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ## Model Basics
 The vocabulary includes the definition of a handful of classes:
@@ -63,4 +66,4 @@ If you would like to place your contributed terms and definitions in a specific 
 
 
 ## Future Work
-* The ontology schema and vocabulary (individuals) will be placed into separate files.
+* The ontology schema and vocabulary (individuals) will be placed into separate files, and there will be some model refinement.
