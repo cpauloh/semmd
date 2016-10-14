@@ -1,7 +1,7 @@
 # Open Terms and Definitions for Materials, Manufacturing, and Design
 ## Background
 During the creation of ontologies (or XML schemas), it's helpful to have human-understandable definitions that can be associated with classes, properties and individuals.
-* When working with domain experts, it reduces the time to identify important concepts and their meaning.
+* When working with domain experts, it reduces the time to identify important concepts and move toward a shared understanding of their meaning.
 * It enables software applications to present definitions to the user at the same time the machine is binding user data to elements in the ontology.
 * If the definitions are published and then referred to by others within their ontologies or XML schemas, it creates another path for identifying points for alignment and/or merging.  
  * Example:  http:example.org/mmd-example/AgeHardening rdfs:seeAlso tnd:000022
