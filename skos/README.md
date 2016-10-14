@@ -15,7 +15,7 @@ Generally there hasn't been any attempt to harmonize or relate the terms and def
 However, in one case regarding a source for Nondestructive Inspection (NDI) information, the glossary contained a term along with an association to a NDI test method.  This was captured in the model through the use of skos:related to link the term and NDI test method.
 
 ## Acknowledgements
-[ASM International](http://www.asminternational.org/) contributed 960 high-quality definitions from their publication entitled "ASM Handbook, Volume 21: Composites."  The definitions are licensed under Creative Commons the [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
+[ASM International](http://www.asminternational.org/) contributed 960 high-quality definitions from their publication entitled "ASM Handbook, Volume 21: Composites."  The definitions are licensed under the Creative Commons [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 **Thank You!**
 
