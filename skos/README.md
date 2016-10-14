@@ -17,6 +17,8 @@ However, in one case regarding a source for Nondestructive Inspection (NDI) info
 ## Acknowledgements
 [ASM International](http://www.asminternational.org/) contributed 960 high-quality definitions from their publication entitled "ASM Handbook, Volume 21: Composites."  The definitions are licensed under Creative Commons the [Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
+**Thank You!**
+
 ## Model Basics
 The vocabulary includes the definition of a handful of classes:
 * tnd:TermAndDefinition
