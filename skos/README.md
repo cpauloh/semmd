@@ -67,6 +67,8 @@ The qname for each contributed term, source, and rights statement will be change
 
 If you would like to place your contributed terms and definitions in a specific subclass within tnd:TermAndDefinition, please feel free to do so.  Note, however, the class structure may change in the future.
 
+## Attribution for This Website
+While attribution may be required for some of the definitions found within the file entitled "mmd_terms_and_definitions.ttl," (the source for each definition links to a rights statement), attribution to this site is not required.
 
 ## Future Work
 * The ontology schema and vocabulary (individuals) will be placed into separate files, and there will be some model refinement.
