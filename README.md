@@ -1,2 +1,2 @@
 # semmd
-Semantic Materials
+Semantic Materials, Manufacgturing, and Design
