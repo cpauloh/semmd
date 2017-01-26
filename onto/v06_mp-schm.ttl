@@ -1,0 +1,58 @@
+﻿# baseURI: http://w3id.org/semmd/v0.6/schma/mpschm
+@prefix mp-schm: <http://w3id.org/semmd/v0.6/schma/mpschm#> .
+@prefix mp-schm-prop: <http://w3id.org/semmd/v0.6/schma/mpschmprop#> .
+@prefix mp-schm-cond: <http://w3id.org/semmd/v0.6/schma/mpschmcond#> .
+@prefix mp-vocab-prop: <http://w3id.org/semmd/v0.6/schma/mpvocabprop#> .
+@prefix mp-vocab-cond: <http://w3id.org/semmd/v0.6/schma/mpvocabcond#> .
+@prefix matl-ex: <http://w3id.org/semmd/v0.6/data/mpdata#> .
+@prefix qudt-quantity-ex: <http://qudtlt.org/v0.6/vocab/quantity-ex#> .
+@prefix qudt-unit-ex: <http://qudtlt.org/v0.6/vocab/unit-ex#> .
+@prefix dl-anno: <http://ontology.dumontierlab.com/annotation#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudtlt.org/schema/qudt#> .
+@prefix qudt-quantity: <http://qudtlt.org/vocab/quantity#> .
+@prefix qudt-unit: <http://qudtlt.org/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+<http://w3id.org/semmd/v0.6/schma/mpschm> rdf:type owl:Ontology ;owl:versionInfo "0.6"^^xsd:string ;dcterms:creator "Clare Paul, Materials and Manufacturing Directorate, Air Force Research Laboratory, Wright-Patterson AFB, Ohio"^^xsd:string ;dcterms:contributor "Pascal Hitzler, Data Semantics Laboratory, Wright State University, Dayton Ohio"^^xsd:string ;dcterms:contributor "Cogan Matthew Shimizu, Wright State University, Dayton Ohio"^^xsd:string ;dcterms:contributor "ASM International"^^xsd:string ;rdfs:label "Materials Property Ontology Schema"@en-US ;dcterms:title "Materials Property Ontology Schema"@en-US ;dc:rights "Creative Commons Attribution-ShareAlike 4.0 International"@en-US ;dcterms:description "This is the base schema for the materials property ontology.  It describes all the properties, the higher-level classes, and a handful of instances."@en-US ;dcterms:description "This ontology represents one of many possible schemas that could be created for describing materials properties.  There were several objectives associated with the creation of this ontology:  (1) explore the design space and capture lessons-learned, (2) make class hierarchy and instance information easily accessible to others for use in their ontology, and (3) potentially create a useful ontology for the materials development community."@en-US ;dcterms:description "The lower-level schema ontologies for materials properties and conditions are contained in separate files and imported into this ontology.   The same is true for the instances associated with the condition schema."@en-US ;dcterms:language "en"^^xsd:string ;dcterms:date "2016-11-22T17:15:38"^^xsd:dateTime ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://ontology.dumontierlab.com/annotation> ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://qudtlt.org/1.1/qudt_lite> ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://qudtlt.org/v0.6/vocab/quantity-ex> ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://qudtlt.org/v0.6/vocab/unit-ex> ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://w3id.org/semmd/v0.6/schma/mpschmcond> ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://w3id.org/semmd/v0.6/schma/mpschmprop> ; .
+<http://w3id.org/semmd/v0.6/schma/mpschm> owl:imports <http://www.w3.org/ns/prov> ; .
+mp-schm:Condition rdf:type owl:Class ;rdfs:comment "condititions for which the materials property is valid."@en-US ;rdfs:subClassOf owl:Thing ; .
+mp-schm:ConditionQuantity rdf:type owl:Class ;rdfs:comment "a condition that is a quantitative value for which the materials property is valid.  Example:  Temperature is 400 degrees Kelvin."@en-US ;rdfs:subClassOf qudt:Quantity ; .
+mp-schm:forMaterialsProperty rdf:type owl:ObjectProperty ;rdfs:domain mp-schm:MaterialsPropertyAssertion ; .
+mp-schm:hasAssociatedUnit rdf:type owl:AnnotationProperty ;rdfs:range xsd:string ; .
+mp-schm:hasCondition rdf:type owl:ObjectProperty ; .
+mp-schm:hasConditionDescription rdf:type owl:DatatypeProperty ;rdfs:range xsd:string ; .
+mp-schm:hasConditionQuantity rdf:type owl:ObjectProperty ;rdfs:range mp-schm:ConditionQuantity ; .
+mp-schm:hasPhysicalDimension rdf:type owl:AnnotationProperty ;rdfs:range xsd:string ; .
+mp-schm:hasMaterialsPropertyAssertion rdf:type owl:ObjectProperty ;rdfs:domain mp-schm:Material ; .
+mp-schm:hasMaterialsPropertyDescription rdf:type owl:DatatypeProperty ;rdfs:range xsd:string ; .
+mp-schm:hasMaterialsPropertyQuantity rdf:type owl:ObjectProperty ;rdfs:range mp-schm:MaterialsPropertyQuantity ; .
+mp-schm:numericValueStatistic rdf:type owl:ObjectProperty ;rdfs:domain mp-schm:MaterialsPropertyQuantityValue ;rdfs:range mp-schm:MathematicalStatistic ; .
+mp-schm:Material rdf:type owl:Class ;rdfs:subClassOf owl:Thing ; .
+mp-schm:MaterialsProperty rdf:type owl:Class ;rdfs:subClassOf owl:Thing ;owl:disjointWith mp-schm:Condition ; .
+mp-schm:MaterialsPropertyAssertion rdf:type owl:Class ;rdfs:subClassOf prov:Entity ; .
+mp-schm:MathematicalStatistic rdf:type owl:Class ;owl:oneOf ( mp-schm:MeanValueStatistic mp-schm:MedianValueStatistic mp-schm:MaximumValueStatistic mp-schm:MinimumValueStatistic mp-schm:MedianLowValueStatistic mp-schm:MedianHighValueStatistic mp-schm:ModeValueStatistic mp-schm:SBasisStatistic mp-schm:BBasisStatistic mp-schm:ABasisStatistic ) ;rdfs:subClassOf owl:Thing ; .
+mp-schm:MaterialsPropertyQuantityValue rdf:type owl:Class ;rdfs:subClassOf qudt:QuantityValue ; .
+mp-schm:MaterialsPropertyQuantity rdf:type owl:Class ;rdfs:subClassOf qudt:Quantity ; .
+mp-schm:MeanValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "mean statistical value"@en-US ; .
+mp-schm:MedianValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "median statistical value"@en-US ; .
+mp-schm:MaximumValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "maximum statistical value"@en-US ; .
+mp-schm:MinimumValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "minimum statistical value"@en-US ; .
+mp-schm:MedianLowValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "low median statistical value"@en-US ; .
+mp-schm:MedianHighValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "high median statistical value"@en-US ; .
+mp-schm:ModeValueStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "mode statistical value"@en-US ; .
+mp-schm:SBasisStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "S-basis statistic"@en-US ; .
+mp-schm:BBasisStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "B-basis statistic"@en-US ; .
+mp-schm:ABasisStatistic rdf:type mp-schm:MathematicalStatistic ;rdfs:label "A-basis statistic"@en-US ; .

@@ -1,0 +1,35 @@
+﻿# baseURI: http://w3id.org/semmd/v0.6/schma/mpschmcond
+@prefix mp-schm: <http://w3id.org/semmd/v0.6/schma/mpschm#> .
+@prefix mp-schm-prop: <http://w3id.org/semmd/v0.6/schma/mpschmprop#> .
+@prefix mp-schm-cond: <http://w3id.org/semmd/v0.6/schma/mpschmcond#> .
+@prefix mp-vocab-prop: <http://w3id.org/semmd/v0.6/schma/mpvocabprop#> .
+@prefix mp-vocab-cond: <http://w3id.org/semmd/v0.6/schma/mpvocabcond#> .
+@prefix matl-ex: <http://w3id.org/semmd/v0.6/data/mpdata#> .
+@prefix qudt-quantity-ex: <http://qudtlt.org/v0.6/vocab/quantity-ex#> .
+@prefix qudt-unit-ex: <http://qudtlt.org/v0.6/vocab/unit-ex#> .
+@prefix dl-anno: <http://ontology.dumontierlab.com/annotation#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudtlt.org/schema/qudt#> .
+@prefix qudt-quantity: <http://qudtlt.org/vocab/quantity#> .
+@prefix qudt-unit: <http://qudtlt.org/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+<http://w3id.org/semmd/v0.6/schma/mpschmcond> rdf:type owl:Ontology ;owl:versionInfo "0.6"^^xsd:string ;dcterms:creator "Clare Paul, Materials and Manufacturing Directorate, Air Force Research Laboratory, Wright-Patterson AFB, Ohio"^^xsd:string ;dcterms:contributor "Pascal Hitzler, Data Semantics Laboratory, Wright State University, Dayton Ohio"^^xsd:string ;dcterms:contributor "Cogan Matthew Shimizu, Wright State University, Dayton Ohio"^^xsd:string ;rdfs:label "Materials Property Condition Schema"@en-US ;dcterms:title "Materials Property Condition Schema"@en-US ;dc:rights "Creative Commons Attribution-ShareAlike 4.0 International"@en-US ;dcterms:description "This ontology describes the classes for material property conditions."@en-US ;dcterms:language "en"^^xsd:string ;dcterms:date "2016-11-22T17:15:38"^^xsd:dateTime ; .
+mp-schm-cond:GrainDirection rdfs:label "grain direction"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ;owl:oneOf ( mp-vocab-cond:Circumferential mp-vocab-cond:LongTransverse mp-vocab-cond:Longitudinal mp-vocab-cond:Radial mp-vocab-cond:ShortTransverse ) ; .
+mp-schm-cond:GrainDirectionRelativeToCrackPlane rdfs:label "grain direction relative to crack plane"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ;owl:oneOf ( mp-vocab-cond:LongNormalTransverseParallel mp-vocab-cond:LongNormalShortParallel mp-vocab-cond:TransverseNormalLongParallel mp-vocab-cond:TransverseNormalShortParallel mp-vocab-cond:ShortNormalLongParallel mp-vocab-cond:ShortNormalTransverseParallel mp-vocab-cond:CircumferentialNormalRadialParallel mp-vocab-cond:CircumferentialNormalLongParallel mp-vocab-cond:RadialNormalCircumferentialParallel mp-vocab-cond:RadialNormalLongParallel mp-vocab-cond:LongNormalCircumferentialParallel mp-vocab-cond:LongNormalRadialParallel ) ; .
+mp-schm-cond:EdgeDistanceToHoleDiameterRatio rdfs:label "edge distance to hole diameter ratio"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:StressIntensityRange rdfs:label "stress intensity range"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:TemperatureOfMaterial rdfs:label "temperature of material"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:MinimumTemperatureOfMaterial rdfs:label "minimum temperature of material"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm-cond:TemperatureOfMaterial ; .
+mp-schm-cond:MaximumTemperatureOfMaterial rdfs:label "maximum temperature of material"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm-cond:TemperatureOfMaterial ; .
+mp-schm-cond:ReferenceElectricalResistivity rdfs:label "reference electrical resistivity"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:TwoDimensionalStressStrainState rdfs:label "two-dimension stress/strain state"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:CrackExtensionMode rdfs:label "crack extension mode"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:SurroundingEnvironment rdfs:label "surrounding environment"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .
+mp-schm-cond:ComputationApproach rdfs:label "computaton approach"@en-US ;rdf:type owl:Class ;rdfs:subClassOf mp-schm:Condition ; .

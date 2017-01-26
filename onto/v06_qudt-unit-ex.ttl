@@ -1,0 +1,57 @@
+﻿# baseURI: http://qudtlt.org/v0.6/vocab/unit-ex_06
+@prefix mp-schm: <http://w3id.org/semmd/v0.6/schma/mpschm#> .
+@prefix mp-schm-prop: <http://w3id.org/semmd/v0.6/schma/mpschmprop#> .
+@prefix mp-schm-cond: <http://w3id.org/semmd/v0.6/schma/mpschmcond#> .
+@prefix mp-vocab-prop: <http://w3id.org/semmd/v0.6/schma/mpvocabprop#> .
+@prefix mp-vocab-cond: <http://w3id.org/semmd/v0.6/schma/mpvocabcond#> .
+@prefix matl-ex: <http://w3id.org/semmd/v0.6/data/mpdata#> .
+@prefix qudt-quantity-ex: <http://qudtlt.org/v0.6/vocab/quantity-ex#> .
+@prefix qudt-unit-ex: <http://qudtlt.org/v0.6/vocab/unit-ex#> .
+@prefix dl-anno: <http://ontology.dumontierlab.com/annotation#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudtlt.org/schema/qudt#> .
+@prefix qudt-quantity: <http://qudtlt.org/vocab/quantity#> .
+@prefix qudt-unit: <http://qudtlt.org/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+<http://qudtlt.org/v0.6/vocab/unit-ex> rdf:type owl:Ontology ; .
+qudt-unit-ex:AmperePerSquareMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:CyclesPerSecond rdf:type qudt:Unit ; .
+qudt-unit-ex:GigaPascalSqrtMillimeter rdf:type qudt:Unit ; .
+qudt-unit-ex:GramPerCubicCentimeter rdf:type qudt:Unit ; .
+qudt-unit-ex:InchPerCycle rdf:type qudt:Unit ; .
+qudt-unit-ex:InchPerInch rdf:type qudt:Unit ; .
+qudt-unit-ex:KilogramPerSquareCentimeter rdf:type qudt:Unit ; .
+qudt-unit-ex:KiloJoulePerKilogram rdf:type qudt:Unit ; .
+qudt-unit-ex:KiloPoundForcePerSquareInch rdf:type qudt:Unit ;qudt:abbreviation "ksi"@en-US ; .
+qudt-unit-ex:KiloVoltAmpere rdf:type qudt:Unit ; .
+qudt-unit-ex:KiloPoundForcePerSquareInchSqrtInch rdf:type qudt:Unit ; .
+qudt-unit-ex:MassPercent rdf:type qudt:Unit ; .
+qudt-unit-ex:MegaPascal rdf:type qudt:Unit ; .
+qudt-unit-ex:MegaPascal rdf:type qudt:Unit ; .
+qudt-unit-ex:MegaPoundForcePerSquareInch rdf:type qudt:Unit ; .
+qudt-unit-ex:MegaWattHour rdf:type qudt:Unit ; .
+qudt-unit-ex:MeterPerCycle rdf:type qudt:Unit ; .
+qudt-unit-ex:MicroinchPerCycle rdf:type qudt:Unit ; .
+qudt-unit-ex:MilliMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:MillimeterPerCycle rdf:type qudt:Unit ; .
+qudt-unit-ex:MegaPascalSqrtMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:MegaPascalSqrtMillimeter rdf:type qudt:Unit ; .
+qudt-unit-ex:NanoMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:NewtonPerSquareMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:OhmMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:PascalSecondPerCubicMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:PascalSqrtMeter rdf:type qudt:Unit ; .
+qudt-unit-ex:PascalSqrtMillimeter rdf:type qudt:Unit ; .
+qudt-unit-ex:PoundForcePerSquareInchSqrtInch rdf:type qudt:Unit ; .
+qudt-unit-ex:SievertPerHour rdf:type qudt:Unit ; .
+qudt-unit-ex:TeraHertz rdf:type qudt:Unit ; .
+qudt-unit-ex:VoltAmpere rdf:type qudt:Unit ; .
+qudt-unit-ex:WattPerKelvin rdf:type qudt:Unit ; .
+qudt-unit-ex:InchPerInchPerDegreeFahrenheit rdf:type qudt:Unit ; .

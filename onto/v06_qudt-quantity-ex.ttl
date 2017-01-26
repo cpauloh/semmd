@@ -1,0 +1,73 @@
+﻿# baseURI: http://qudtlt.org/v0.6/vocab/quantity-ex_06
+@prefix mp-schm: <http://w3id.org/semmd/v0.6/schma/mpschm#> .
+@prefix mp-schm-prop: <http://w3id.org/semmd/v0.6/schma/mpschmprop#> .
+@prefix mp-schm-cond: <http://w3id.org/semmd/v0.6/schma/mpschmcond#> .
+@prefix mp-vocab-prop: <http://w3id.org/semmd/v0.6/schma/mpvocabprop#> .
+@prefix mp-vocab-cond: <http://w3id.org/semmd/v0.6/schma/mpvocabcond#> .
+@prefix matl-ex: <http://w3id.org/semmd/v0.6/data/mpdata#> .
+@prefix qudt-quantity-ex: <http://qudtlt.org/v0.6/vocab/quantity-ex#> .
+@prefix qudt-unit-ex: <http://qudtlt.org/v0.6/vocab/unit-ex#> .
+@prefix dl-anno: <http://ontology.dumontierlab.com/annotation#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudtlt.org/schema/qudt#> .
+@prefix qudt-quantity: <http://qudtlt.org/vocab/quantity#> .
+@prefix qudt-unit: <http://qudtlt.org/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+<http://qudtlt.org/v0.6/vocab/quantity-ex> rdf:type owl:Ontology ; .
+qudt-quantity-ex:PercentRate rdf:type qudt:SpaceAndTimeQuantityKind ; .
+qudt-quantity-ex:AcousticImpedance rdf:type qudt:MechanicsQuantityKind ; .
+qudt-quantity-ex:DampingCapacity rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:SpecificAcousticImpedence rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:ElasticModulus rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:ElasticModulus rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:ElasticModulus rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:ElasticModulus rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:ElasticModulus rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:ElasticModulus rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:CyclicVelocity rdf:type qudt:SpaceAndTimeQuantityKind ; .
+qudt-quantity-ex:StressIntensity rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:StressIntensity rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:StressIntensity rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:StressIntensity rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:StressIntensity rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:BrinellHardness rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:KnoopHardness rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:RockwellHardness rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:ScleroscopeHardness rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:VickersHardness rdf:type qudt:QuantityKind ; .
+qudt-quantity-ex:SpecificStrength rdf:type qudt:MechanicsQuantityKind ; .
+qudt-quantity-ex:StressIntensity rdf:type qudt:SolidMechanicsQuantityKind ; .
+qudt-quantity-ex:SurfaceDensity rdf:type qudt:MechanicsQuantityKind ; .
+qudt-quantity-ex:SurfaceDensity rdf:type qudt:MechanicsQuantityKind ; .
+qudt-quantity-ex:ElectricalConductance rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:ElectricConductivity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:ElectricResistivity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:ThermalCoefficientOfElectricResistivity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:TBD-VolumeConductivity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:WeightBasisElectricConductivity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:WeightBasisElectricResistivity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:HallCoefficient rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticFluxDensity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticCoreLoss rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticFluxDensity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticFluxDensity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticFluxDensity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticVolumeSusceptibility rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagnetoresistanceCoefficient rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MassMagneticSusceptibility rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MolarMagneticSusceptibility rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:Permeability rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:MagneticFluxDensity rdf:type qudt:ElectricityAndMagnetismQuantityKind ; .
+qudt-quantity-ex:Compressibility rdf:type qudt:MechanicsQuantityKind ; .
+qudt-quantity-ex:Fluidity rdf:type qudt:FluidMechanicsQuantityKind ; .
+qudt-quantity-ex:KinematicViscosity rdf:type qudt:FluidMechanicsQuantityKind ; .
+qudt-quantity-ex:SpecificWeight rdf:type qudt:MechanicsQuantityKind ; .
+qudt-quantity-ex:LinearThermalExpansion rdf:type qudt:ThermodynamicsQuantityKind ; .
+qudt-quantity-ex:VolumetricThermalExpansion rdf:type qudt:ThermodynamicsQuantityKind ; .

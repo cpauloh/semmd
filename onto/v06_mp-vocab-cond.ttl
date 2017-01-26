@@ -1,0 +1,52 @@
+﻿# baseURI: http://w3id.org/semmd/v0.6/schma/mpvocabcond
+@prefix mp-schm: <http://w3id.org/semmd/v0.6/schma/mpschm#> .
+@prefix mp-schm-prop: <http://w3id.org/semmd/v0.6/schma/mpschmprop#> .
+@prefix mp-schm-cond: <http://w3id.org/semmd/v0.6/schma/mpschmcond#> .
+@prefix mp-vocab-prop: <http://w3id.org/semmd/v0.6/schma/mpvocabprop#> .
+@prefix mp-vocab-cond: <http://w3id.org/semmd/v0.6/schma/mpvocabcond#> .
+@prefix matl-ex: <http://w3id.org/semmd/v0.6/data/mpdata#> .
+@prefix qudt-quantity-ex: <http://qudtlt.org/v0.6/vocab/quantity-ex#> .
+@prefix qudt-unit-ex: <http://qudtlt.org/v0.6/vocab/unit-ex#> .
+@prefix dl-anno: <http://ontology.dumontierlab.com/annotation#> .
+@prefix dctype: <http://purl.org/dc/dcmitype/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudtlt.org/schema/qudt#> .
+@prefix qudt-quantity: <http://qudtlt.org/vocab/quantity#> .
+@prefix qudt-unit: <http://qudtlt.org/vocab/unit#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+<http://w3id.org/semmd/v0.6/schma/mpvocabcond> rdf:type owl:Ontology ;owl:versionInfo "0.6"^^xsd:string ;dcterms:creator "Clare Paul, Materials and Manufacturing Directorate, Air Force Research Laboratory, Wright-Patterson AFB, Ohio"^^xsd:string ;dcterms:contributor "Pascal Hitzler, Data Semantics Laboratory, Wright State University, Dayton Ohio"^^xsd:string ;dcterms:contributor "Cogan Matthew Shimizu, Wright State University, Dayton Ohio"^^xsd:string ;rdfs:label "Materials Property Condition Vocabulary"@en-US ;dcterms:title "Materials Property Condition Vocabulary"@en-US ;dc:rights "Creative Commons Attribution-ShareAlike 4.0 International"@en-US ;dcterms:description "This vocabulary describes instances of classes in the condition schema ontology."@en-US ;dcterms:language "en"^^xsd:string ;dcterms:date "2016-11-22T17:15:38"^^xsd:dateTime ; .
+<http://w3id.org/semmd/v0.6/schma/mpvocabcond> owl:imports <http://w3id.org/semmd/v0.6/schma/mpschmcond> ; .
+mp-vocab-cond:Circumferential rdfs:label "curcumferential"@en-US ;rdfs:comment "C"@en-US ;rdf:type mp-schm-cond:GrainDirection ; .
+mp-vocab-cond:LongTransverse rdfs:label "long-transverse"@en-US ;rdfs:comment "T"@en-US ;rdf:type mp-schm-cond:GrainDirection ; .
+mp-vocab-cond:Longitudinal rdfs:label "longitudinal"@en-US ;rdfs:comment "L"@en-US ;rdf:type mp-schm-cond:GrainDirection ; .
+mp-vocab-cond:Radial rdfs:label "radial"@en-US ;rdfs:comment "R"@en-US ;rdf:type mp-schm-cond:GrainDirection ; .
+mp-vocab-cond:ShortTransverse rdfs:label "short-transverse"@en-US ;rdfs:comment "S"@en-US ;rdf:type mp-schm-cond:GrainDirection ; .
+mp-vocab-cond:LongNormalTransverseParallel rdfs:label "long normal transverse parallel"@en-US ;rdfs:comment "L-T"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:LongNormalShortParallel rdfs:label "long normal short parallel"@en-US ;rdfs:comment "L-S"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:TransverseNormalLongParallel rdfs:label "transverse normal long parallel"@en-US ;rdfs:comment "T-L"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:TransverseNormalShortParallel rdfs:label "transverse normal short parallel"@en-US ;rdfs:comment "T-S"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:ShortNormalLongParallel rdfs:label "short normal long parallel"@en-US ;rdfs:comment "S-L"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:ShortNormalTransverseParallel rdfs:label "short normal transverse parallel"@en-US ;rdfs:comment "S-T"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:CircumferentialNormalRadialParallel rdfs:label "circumferential normal radial parallel"@en-US ;rdfs:comment "C-R"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:CircumferentialNormalLongParallel rdfs:label "circumferential normal long parallel"@en-US ;rdfs:comment "C-L"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:RadialNormalCircumferentialParallel rdfs:label "radial normal circumferential parallel"@en-US ;rdfs:comment "R-C"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:RadialNormalLongParallel rdfs:label "radial normal long parallel"@en-US ;rdfs:comment "R-L"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:LongNormalCircumferentialParallel rdfs:label "long normal circumferential parallel"@en-US ;rdfs:comment "L-C"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:LongNormalRadialParallel rdfs:label "long normal radial parallel"@en-US ;rdfs:comment "L-R"@en-US ;rdf:type mp-schm-cond:GrainDirectionRelativeToCrackPlane ; .
+mp-vocab-cond:EdgeDistanceToHoleDiameterRatio-1_5 rdfs:label "edge distance to hole diameter ratio of 1.5"@en-US ;rdfs:comment "e/D = 1.5"@en-US ;rdf:type mp-schm-cond:EdgeDistanceToHoleDiameterRatio ; .
+mp-vocab-cond:EdgeDistanceToHoleDiameterRatio-2_0 rdfs:label "edge distance to hole diameter ratio of 2.0"@en-US ;rdfs:comment "e/D = 2.0"@en-US ;rdf:type mp-schm-cond:EdgeDistanceToHoleDiameterRatio ; .
+mp-vocab-cond:PlaneStrain rdfs:label "plane strain"@en-US ;rdf:type mp-schm-cond:TwoDimensionalStressStrainState ; .
+mp-vocab-cond:PlaneStress rdfs:label "plane stress"@en-US ;rdf:type mp-schm-cond:TwoDimensionalStressStrainState ; .
+mp-vocab-cond:ModeOneCrackExtension rdfs:label "mode I crack extension"@en-US ;rdfs:comment "crack opening mode"@en-US ;rdf:type mp-schm-cond:CrackExtensionMode ; .
+mp-vocab-cond:ModeTwoCrackExtension rdfs:label "mode II crack extension"@en-US ;rdfs:comment "in-plane shearing or sliding mode"@en-US ;rdf:type mp-schm-cond:CrackExtensionMode ; .
+mp-vocab-cond:ModeThreeCrackExtension rdfs:label "mode III crack extension"@en-US ;rdfs:comment "tearing or anti-plane shear mode"@en-US ;rdf:type mp-schm-cond:CrackExtensionMode ; .
+mp-vocab-cond:StrainOffset-0_001 rdfs:label "strain offset of 0.001"@en-US ;rdf:type mp-schm-cond:ComputationApproach ; .
+mp-vocab-cond:StrainOffset-0_002 rdfs:label "strain offset of 0.002"@en-US ;rdf:type mp-schm-cond:ComputationApproach ; .
+mp-vocab-cond:LabAir rdfs:label "lab air"@en-US ;rdf:type mp-schm-cond:SurroundingEnvironment ; .
+mp-vocab-cond:RoomTemperature rdfs:label "room temperature"@en-US ;rdf:type mp-schm-cond:TemperatureOfMaterial ; .
