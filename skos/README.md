@@ -27,8 +27,8 @@ The vocabulary includes the definition of a handful of classes:
 * tnd:DefinitonSource
 * tnd:RightsStatement
 
-![alt text][class_structure]
-[class_structure]: https://github.com/cpauloh/semmd/blob/master/skos/ClassStructure.PNG "Class Structure"
+
+![Class Structure](https://github.com/cpauloh/semmd/blob/master/skos/ClassStructure.PNG)
 
 and one definition of an object property:
 * tnd:originalSource
