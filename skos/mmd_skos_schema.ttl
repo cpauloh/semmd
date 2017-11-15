@@ -1,0 +1,80 @@
+# baseURI: https://w3id.org/semmd/mmd/schema/skos
+# imports: http://creativecommons.org/ns
+# imports: http://purl.org/dc/elements/1.1/
+# imports: http://purl.org/dc/terms/
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: tnds
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tnds: <https://w3id.org/semmd/mmd/schema/skos#> .
+@prefix turtle: <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/semmd/mmd/schema/skos>
+  rdf:type owl:Ontology ;
+  dc:description "This vocabulary is comprised of terms and definitions related to materials, manufacturing and design and may be reused without any distribution limitation.  However, the definitions of some terms require attribution."@en-US ;
+  dc:source <https://w3id.org/semmd/skos/> ;
+  dcterms:creator <https://w3id.org/people/clarepaul> ;
+  rdfs:comment "All terms and definitions included in version 0001 were first converted or transcribed from their respective source documents into Microsoft Excel where they were edited prior to being transformed to RDF."@en-US ;
+  rdfs:comment "The terms and definitions associated with skosConceptSchemes cs004 through cs042 were provided by Alion S&T and are generally associated with functional materials."@en-US ;
+  rdfs:comment "This ontology is intended to be used with the SKOS vocabulary https://w3id.org/semmd/skos/v0009" ;
+  rdfs:label "An Open Glossary for Materials, Manufacturing and Design"@en-US ;
+  rdfs:seeAlso <https://github.com/cpauloh/semmd/tree/master/skos/> ;
+  owl:imports <http://creativecommons.org/ns> ;
+  owl:imports dc: ;
+  owl:imports dcterms: ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:incompatibleWith <https://w3id.org/semmd/skos/ver0001> ;
+  owl:priorVersion <https://w3id.org/semmd/skos/ver0008> ;
+  owl:versionIRI <https://w3id.org/semmd/skos/ver0009> ;
+  owl:versionInfo "version 0009" ;
+  skos:changeNote "2016-10-11 Error and Fix:  Replaced dc:date with dct:date"@en-US ;
+  skos:changeNote "2016-10-11 Error:  Source dates were asserted to be the domain of dc:source.  Example:  tnd:ds017 dc:source \"2012-06-01\"^^xsd:date  Fix:  The offending predicates were changed to dct:date."@en-US ;
+  skos:changeNote "2016-10-16 Version 0004:  The terms added are comprised of terms and definitions from ASM Handbook 21:Composites.  The Creative Commons vocabulary and the CreativeCommons license document for CC BY-SA 4.0 was also added in this version."@en-us ;
+  skos:changeNote "2017-05-12 Version 0005:  The IRI was changed for each license currently used in the semmd vocabulary:  <http://creativecommons.org/license#CC_BY_4-0> and <http://creativecommons.org/license#CC_BY-SA_4-0>"@en-US ;
+  skos:changeNote "2017-05-12 Version 0005:  The creative commons ontology was causing errors associated with duplicative declarations.  The ontology from http://creativecommons.org/schema.rdf is now being used."@en-US ;
+  skos:changeNote "2017-11-08 Version 0007:  Each individual was typed as owl:NamedIndividual.  While not specifically a SKOS requirement,it helps when used with ontology editors."@en-US ;
+  skos:changeNote "2017-11-08 Version 0009:  All individuals (concepts, source definitions, rights, concept schemes) were removed from the ontology and placed in mmd_skos_vocab.ttl." ;
+  skos:prefLabel "An Open Glossary for Materials, Manufacturing and Design"@en-US ;
+.
+tnds:DefinitionSource
+  rdf:type owl:Class ;
+  rdfs:label "source of definition"@en-US ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "source of definition"@en-US ;
+.
+tnds:NdiTestMethod
+  rdf:type owl:Class ;
+  rdfs:label "nondestructive inspection test method"@en-US ;
+  rdfs:subClassOf tnds:TermAndDefinition ;
+  skos:prefLabel "nondestructive inspection test method"@en-US ;
+.
+tnds:RightsStatement
+  rdf:type owl:Class ;
+  rdfs:label "rights statement"@en-US ;
+  rdfs:subClassOf dcterms:RightsStatement ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "rights statement"@en-US ;
+.
+tnds:TermAndDefinition
+  rdf:type owl:Class ;
+  rdfs:label "term and definition"@en-US ;
+  rdfs:subClassOf skos:Concept ;
+  skos:prefLabel "term and definition"@en-US ;
+.
+tnds:UnitOfMeasure
+  rdf:type owl:Class ;
+  rdfs:label "unit of measure"@en-US ;
+  rdfs:subClassOf tnds:TermAndDefinition ;
+  skos:prefLabel "unit of measure"@en-US ;
+.
+tnds:originalSource
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "original source" ;
+  rdfs:seeAlso <https://www.w3.org/TR/prov-o/#hadPrimarySource> ;
+.
